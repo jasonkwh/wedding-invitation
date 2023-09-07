@@ -2,9 +2,12 @@
 
 Single, mobile responsive page wedding invitation app powered by Svelte.
 
-## Developing
+## Instal dependencies
+```bash
+npm install
+```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## To start the development server:
 
 ```bash
 npm run dev
