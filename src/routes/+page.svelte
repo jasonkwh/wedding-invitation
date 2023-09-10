@@ -46,26 +46,3 @@
     <p>酒店/Hotel</p>
     <p>地址/Address</p>
 </section>
-
-<style>
-    section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-    .brideAndGroom {
-        color: #c2904c;
-        margin: 10px;
-    }
-    .brideAndGroomTitle {
-        font-size: 4vw;
-    }
-    .brideAndGroomName {
-        font-size: 6vw;
-    }
-    p {
-        font-size: 4vw;
-    }
-</style>
