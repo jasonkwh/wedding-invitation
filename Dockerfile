@@ -1,19 +1,22 @@
 # stage build
-FROM node:current-alpine3.17 as builder
+FROM --platform=linux/amd64 node:current-alpine3.17 as builder
 
 WORKDIR /app
 
 # update system dependencies
-RUN apk update
+RUN apk update && npm install -g npm@latest
 
 COPY . .
 
 RUN npm ci && npm audit fix && npm run build
 
 # stage run
-FROM node:current-alpine3.17
+FROM --platform=linux/amd64 node:current-alpine3.17
 
 WORKDIR /app
+
+# update system dependencies
+RUN apk update && npm install -g npm@latest
 
 COPY --from=builder /app/package*.json ./
 
