@@ -1,5 +1,5 @@
 # stage build
-FROM --platform=linux/amd64 node:current-alpine3.17 as builder
+FROM --platform=linux/amd64 node:current-alpine3.18 as builder
 
 WORKDIR /app
 
@@ -11,7 +11,7 @@ COPY . .
 RUN npm ci && npm audit fix && npm run build
 
 # stage run
-FROM --platform=linux/amd64 node:current-alpine3.17
+FROM --platform=linux/amd64 node:current-alpine3.18
 
 WORKDIR /app
 
