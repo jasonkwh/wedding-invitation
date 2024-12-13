@@ -1,3 +1,5 @@
-<footer>
-    <p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-</footer>
+<script>
+    import footer from '$lib/resources/footer.png';
+</script>
+
+<span class="lights"><img src={footer} alt="footer" /></span>
