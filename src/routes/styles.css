@@ -2,27 +2,20 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    z-index: 1;
 }
-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    width: 100%;
-    max-width: 64rem;
-    margin: 0 auto;
-    box-sizing: border-box;
+.background {
+    position: fixed; /* Fix it to the viewport */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-color: #fff;
+    z-index: -1; /* Place it behind other content */
 }
 header {
     display: flex;
     justify-content: space-between;
-}
-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 0.6;
 }
 .lights img {
     width: 100%;

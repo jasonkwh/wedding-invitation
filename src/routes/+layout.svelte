@@ -7,6 +7,8 @@
 	import './styles.css';
 </script>
 
+<div class="background"></div>
+
 <div class="app">
 	<Header />
 
