@@ -11,8 +11,8 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-node": "^5.2.10",
-		"@sveltejs/kit": "^2.11.1",
-		"svelte": "^5.12.0",
+		"@sveltejs/kit": "^2.12.1",
+		"svelte": "^5.14.1",
 		"svelte-check": "^4.1.1",
 		"svelte-flickity": "^1.1.3",
 		"typescript": "^5.2.2",
